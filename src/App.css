@@ -1,0 +1,141 @@
+/* app.css */
+
+/* Global styling dan dark theme */
+body {
+  background-color: #121212;
+  margin: 0;
+  padding: 0;
+  font-family: 'Roboto', sans-serif;
+}
+
+/* Background gradient untuk container utama */
+.bg-dark-bg {
+  background: linear-gradient(135deg, #1e1e1e, #121212);
+}
+
+/* Efek gradient pada teks judul */
+.gradient-text {
+  background: linear-gradient(90deg, #ff6ec4, #7873f5);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+/* Styling untuk tombol */
+.btn {
+  padding: 0.75rem 1.5rem;
+  border: none;
+  border-radius: 0.5rem;
+  font-size: 1.125rem;
+  cursor: pointer;
+  transition: transform 0.2s ease-in-out;
+  display: inline-block;
+}
+
+.btn-primary {
+  background-color: #3b82f6;
+  color: #fff;
+}
+
+.btn-primary:hover {
+  background-color: #2563eb;
+}
+
+.btn-success {
+  background-color: #10b981;
+  color: #fff;
+}
+
+.btn-success:hover {
+  background-color: #059669;
+}
+
+.disabled {
+  background-color: #6b7280;
+  cursor: not-allowed;
+}
+
+/* Styling untuk kartu transaksi */
+.transaction-card {
+  width: 100%;
+  max-width: 400px;
+  background-color: #1f2937;
+  padding: 2rem;
+  border-radius: 0.75rem;
+  box-shadow: 0 10px 15px rgba(0,0,0,0.3);
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  margin-bottom: 2rem;
+}
+
+/* Styling untuk label dan input */
+.input-label {
+  font-size: 1.125rem;
+  margin-bottom: 0.5rem;
+}
+
+.input-field {
+  padding: 0.75rem;
+  border-radius: 0.375rem;
+  border: 1px solid #374151;
+  background-color: #374151;
+  color: #fff;
+  outline: none;
+  transition: border-color 0.3s ease;
+}
+
+.input-field:focus {
+  border-color: #ec4899;
+}
+
+/* Styling untuk gambar agar berada di tengah dan tidak terlalu besar */
+.success-image {
+  max-width: 150px; /* Menyesuaikan ukuran gambar */
+  height: auto; /* Mempertahankan aspek rasio */
+  display: block;
+  margin: 0 auto; /* Membuat gambar tetap di tengah */
+}
+
+/* Untuk memastikan success-card tetap berada di tengah */
+.success-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center; /* Memastikan elemen di dalamnya berada di tengah */
+  text-align: center;
+}
+
+/* Teks sukses */
+.success-text {
+  font-size: 1.25rem;
+  font-weight: bold;
+  margin-bottom: 1rem;
+}
+
+/* Link Block Explorer */
+.block-explorer-link {
+  color: #60a5fa;
+  text-decoration: none;
+  font-size: 1rem;
+  transition: color 0.2s ease-in-out;
+}
+
+.block-explorer-link:hover {
+  color: #3b82f6;
+}
+
+/* Animasi fade-in */
+.fade-in {
+  animation: fadeIn 0.8s ease-in-out;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
